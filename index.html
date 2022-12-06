@@ -1,0 +1,972 @@
+﻿<!DOCTYPE html>
+<html lang="da" translate="no" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" content="notranslate">
+    <title>FP9-Matematik_med_hjælpemidler-digital prøve</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/tools.css" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/uvm-top-logos.js"></script>
+    <script src="js/uvm_html5_opgave_samlet.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/flowtype.js"></script>
+    <script type="text/javascript" src="js/video-player-subtitles.js"></script>
+    <script type="text/javascript" src="js/browser-detect.js"></script>
+    <script type="text/javascript" src="js/video-player-samlet.js"></script>
+    <script type="text/javascript" src="js/audio-player.js"></script>
+    <script src="js/imageSlider.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltip.js"></script>
+    <style>
+        .frac {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+            line-height: 1em;
+            vertical-align: middle;
+        }
+
+        .frac div {
+            line-height: 1em;
+            text-align: center;
+        }
+
+        .frac div:not(:last-child) {
+            border-bottom: 1px solid #000000;
+        }
+
+        .point h2 {
+            float: left;
+        }
+
+        .point span {
+            float: right;
+        }
+
+        .box span {
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body data-taskid="" data-fag="fs" style="visibility:hidden">
+    <div class="wrapper">
+        <div class="top">
+            <div id="uvmLogo"><img src="images/uvm_logo_stuk.png" alt="logo" /></div>
+        </div>
+        <!--End Top-->
+        <div class="main">
+            <div id="menuWrapper">
+                <div id="menu">
+                </div> <!-- END MENU -->
+                <div id="taskNumber">&nbsp;</div>
+            </div>
+            <div id="content">
+
+                <!--Forside-->
+                <div class="PAGE" data-id="1" data-parentid="0" data-layout="0" data-menutekst="Forside">
+                    <div style="height:95px;">&nbsp;</div>
+                    <div style="height:305px;">
+                        <hr style="margin-bottom: 20px; border-bottom: 1px solid black; border-top: 0px solid black; width: 200px" align="left" />
+                        <div style="font-size: 1.7em; font-weight: bold; padding: 5px 0 5px 0;">Matematik FP9</div>
+                        <hr style="margin-top: 20px; border-bottom: 1px solid black; border-top: 0px; width: 455px;" align="left" />
+                        <br />Prøven med hjælpemidler
+                        <br /><br />
+                        Til dette opgavesæt hører en regnearksfil til opgave 3 og et svarark til opgave 2 og 7
+                    </div>
+                    <br /><br /><br /><br />
+                    Tirsdag den 3. maj 2022
+                    <br />
+                    kl. 10.00-13.00
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="2" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+
+                <!--Vejledning-->
+                <div class="PAGE" data-id="3" data-parentid="0" data-layout="0" data-menutekst="Vejledning">
+                    Kære elev
+                    <br /><br />
+                    Prøven består af 7 opgaver. Du har 3 timer til at løse dem.<br />
+                    Ved hver opgave står der, hvor mange point den højst kan give.
+					<br />
+                    Prøven kan i alt højst give 66 point. Du bestemmer selv, hvilken rækkefølge du laver opgaverne i, og hvor lang tid du vil bruge på hver af dem.
+                    <br /><br />
+                    Det er vigtigt, at du begrunder dine svar i <i>alle</i> opgaver.
+                    <br /><br />
+                    Det betyder, at du i hver opgave skal vise eller forklare, hvordan du er nået frem til dit svar. Du kan fx begrunde dit svar med tekst, beregninger og/eller tegninger.
+                    <br /><br />
+                    En del af de point, du kan få i hver opgave, kommer fra dine begrundelser. I de fleste opgaver kan du ikke få det højeste antal point, hvis du ikke begrunder dit svar, selv om dine resultater er rigtige.
+                    <br /><br />
+                    I nogle af opgaverne skal du beregne et antal eller en størrelse. I andre opgaver skal du vise, hvordan du finder frem til et bestemt resultat eller afgøre, om en påstand er sand eller falsk.
+                    <br /><br />
+                    Der er også opgaver, hvor du skal løse et matematisk problem ved at undersøge. I disse opgaver forventer vi ikke, at du på forhånd
+                    kender en metode, du kan bruge til at løse problemet. Ordet ’undersøg’ signalerer, at du selv skal finde på en god måde at løse problemet på ved at bruge matematik, du kender.
+                    <br /><br />
+                    God arbejdslyst.
+                    <br /><br />
+                    Styrelsen for Undervisning og Kvalitet
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="4" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+                <!--Opgave 1-->
+                <div class="PAGE" data-id="5" data-parentid="0" data-layout="0" data-menutekst="Opgave 1">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">1</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Køb af en elpære</h2>
+                                <span style="line-height: 28px;">Opgave 1 giver højst 11 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div style="position:relative">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td style="vertical-align: text-top; padding-right:6%; padding-top: 7%;">
+                                    <br /><br /><br />
+                                    Anna vil købe en ny elpære. Hun kan enten købe en LED-pære eller en halogenpære. Tabellen viser oplysninger om de to slags elpærer.
+                                    <br /><br />
+                                </td>
+                                <td style="width:30%;">
+                                    <div style="width:100%;">
+                                        <img src="files/194499_billede_opg1.png" alt="" width="100%">
+                                    </div>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td colspan="2">
+                                    <br />
+                                    <table style="width: 100%; border: 1px solid black; border-collapse: collapse; text-align: center;" cellPadding="10">
+                                        <tr style="background-color: #82d0f5;">
+                                            <td style="width: 58%; border-right: 1px solid black; border-bottom: 1px solid black;">&nbsp;
+                                                
+                                            </td>
+                                            <td style="width: 21%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                LED-pære
+                                            </td>
+                                            <td style="width: 21%; border-bottom: 1px solid black;">
+                                                Halogenpære
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Pris pr. stk.
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                59,50 kr.
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                34,00 kr.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Levetid (gennemsnit)
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                15.000 timer
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                1000 timer
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Udgift til el til 1 pære i 1 måned (gennemsnit)
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                1 kr.
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                5 kr.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.1</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor stor er prisforskellen på en LED-pære og en halogenpære?
+                                        <br /><br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.2</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Cirka hvor mange år kan en LED-pære holde, hvis Anna bruger den 3 timer om dagen?
+                                        <br /><br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.3</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor mange procent er udgiften til el mindre for en LED-pære end for en halogenpære?
+                                        <br /><br /><br />
+                                        Anna køber en LED-pære, selv om prisen er højere end for en halogenpære. Hun påstår, at pengene vil være tjent hjem i løbet af få måneder.
+                                        <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.4</span></td>
+                                <td colspan="2"> 
+                                    <div style="padding-top:calc(0.1em + 2px);">
+                                        Undersøg, om Anna har ret. Du kan fx begrunde dit svar med grafer, som du tegner i et koordinatsystem.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width:30%;position:absolute;top:0;right:0;">
+                            <img src="files/194499_billede_opg1.png" alt="" width="100%">
+                            <span style="font-size: 80%;">Foto: Opgavekommissionen i matematik</span>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 2-->
+                <div class="PAGE" data-id="6" data-parentid="0" data-layout="0" data-menutekst="Opgave 2">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">2</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Lys på cyklen</h2>
+                                <span style="line-height: 28px;">Opgave 2 giver højst 7 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div style="position:relative">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td style="vertical-align: text-top; padding-right: 6%; padding-top: 5%;">
+                                    <br /><br /><br />
+                                    9. A har lavet en undersøgelse om elevers og forældres brug af lys på deres cykler. Derfor har de talt, hvor mange cyklister der kørte med lys, og hvor mange der kørte uden lys en morgen på en vej ved deres skole.
+                                    <br /><br />
+                                </td>
+                                <td style="width:50%;">
+                                    <div style="width:100%;">
+                                        <img src="files/194499_billede_opg2.png" alt="" width="100%">
+                                    </div>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" style="vertical-align: text-top; padding-right: 6%;">
+                                    Tabellen viser 9. A’s resultater:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" >
+                                    <br />
+                                    <table style="width: 75%; border: 1px solid black; border-collapse: collapse; text-align: center;" cellPadding="10">
+                                        <tr style="background-color: #82d0f5;">
+                                            <td style="width: 58%; border-right: 1px solid black; border-bottom: 1px solid black;">&nbsp;
+                                                
+                                            </td>
+                                            <td style="width: 21%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Elever
+                                            </td>
+                                            <td style="width: 21%; border-bottom: 1px solid black;">
+                                                Forældre
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Antal cyklister med lys
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                15
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Antal cyklister uden lys
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                12
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                7
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Antal i alt
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                57
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                22
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Procentdel uden lys
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                21,1 %
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                31,8 %
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" style="vertical-align: text-top; padding-right: 6%;">
+                                    9. A skriver om undersøgelsen:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" >
+                                    <br />
+                                    <table style="width: 90%; border: 1px solid black; border-collapse: collapse;" cellPadding="10">
+                                        <tr>
+                                            <td colspan="4" style="padding-top: 3%; padding-left: 3%;">Vores undersøgelse viser, at:</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 6%; vertical-align: text-top;">&nbsp;</td>
+                                            <td style="width: 2%; vertical-align: text-top;">–</td>
+                                            <td style="width: 82%; vertical-align: text-top;">12 ud af 45 elever cyklede uden lys.</td>
+                                            <td style="width: 10%;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="vertical-align: text-top;">&nbsp;</td>
+                                            <td style="vertical-align: text-top;">–</td>
+                                            <td style="vertical-align: text-top;">60 ud af 79 cyklister cyklede med lys. Det svarer til ca. 4 ud af 5 cyklister.</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="vertical-align: text-top;">&nbsp;</td>
+                                            <td style="vertical-align: text-top;">–</td>
+                                            <td style="vertical-align: text-top;">21,1 % af eleverne og 31,8 % af forældrene cyklede uden lys. Samlet set var det 52,9 % af cyklisterne.</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="vertical-align: text-top;">&nbsp;</td>
+                                            <td style="vertical-align: text-top;">–</td>
+                                            <td style="vertical-align: text-top;">andelen af forældre, der cyklede uden lys, var 10,7 % større end andelen af elever, der cyklede uden lys.<br /><br /></td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">2.1</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Der er nogle matematiske fejl i 9. A’s tekst om undersøgelsen. Det er din opgave at rette fejlene ved at ændre på nogle af tallene i teksten. Brug evt. svararket.
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width:50%;position:absolute;top:0;right:0;">
+                            <img src="files/194499_billede_opg2.png" alt="" width="100%">
+                            <span style="font-size: 80%;">Foto: Colourbox</span>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 3-->
+                <div class="PAGE" data-id="7" data-parentid="0" data-layout="0" data-menutekst="Opgave 3">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">3</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Levetid for elpærer</h2>
+                                <span style="line-height: 28px;">Opgave 3 giver højst 11 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                Et forbrugermagasin har testet levetiden for 100 elpærer fra virksomheden SKIN. Diagrammet viser pærernes levetid.
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                <div class="svg" style="width:100%;">
+                                    <canvas width="242" height="100"></canvas>
+                                    <svg id="bd6e6f26-6753-4ad6-a189-a014885d1040" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1443.07 595.93">
+                                        <image width="1443" height="596" transform="translate(0.25)" xlink:href="files/194499_billede_opg3.png"/>
+                                        <text transform="translate(9.44 27.65) scale(1.05 1)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Antal SKIN-pærer</text>
+                                        <text transform="translate(0 108.24)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">30</text>
+                                        <text transform="translate(0 241.06) scale(1.04 1)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">20</text>
+                                        <text transform="translate(0.06 379.71)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">10</text>
+                                        <text transform="translate(15.19 509.55)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">0</text>
+                                        <text transform="translate(101.11 539.96)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">10.000</text>
+                                        <text transform="translate(220.66 540.24) scale(1.05 1)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">11.000</text>
+                                        <text transform="translate(338.56 540.24) scale(1.03 1)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">12.000</text>
+                                        <text transform="translate(460.35 539.65)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">13.000</text>
+                                        <text transform="translate(580.14 539.9) scale(1.04 1)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">14.000</text>
+                                        <text transform="translate(701.18 539.42)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">15.000</text>
+                                        <text transform="translate(821.46 540.15)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">16.000</text>
+                                        <text transform="translate(941.56 539.22)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">17.000</text>
+                                        <text transform="translate(1061.15 538.84)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">18.000</text>
+                                        <text transform="translate(1181.01 538.94)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">19.000</text>
+                                        <text transform="translate(1300.61 539.98)" style="font-size: 27px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">20.000</text>
+                                        <text transform="translate(1302.69 587.71) scale(1.22 1)" style="font-size: 24.082374572753906px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Antal timer</text>
+                                    </svg>
+                                </div>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">3.1</span></td>
+                            <td colspan="2" style="vertical-align: text-top;">
+                                <div style="padding-top:calc(0.1em + 2px); margin-top: -0.1em;">Hvor mange af pærerne fra SKIN havde en levetid på mellem 13.000 og 14.000 timer?
+                                    <br /><br /><br />
+                                    Anna påstår, at flere end <span class="frac"><div>3</div><div>4</div></span> af pærerne fra SKIN havde en levetid på mindst 14.000 timer.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="margin-top: -1%;">
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">3.2</span></td>
+                            <td colspan="2" style="vertical-align: text-top;">
+                                <div style="padding-top:calc(0.1em + 2px);">Har Anna ret i sin påstand?
+                                    <br /><br /><br />
+                                    Forbrugermagasinet har også testet levetiden for 100 pærer fra firmaet BLID. Regnearket <a href="#" onclick="UVM.view.funcLoadMenu(13, 0); UVM.view.funcLoadContent(13, 0);">BLID_MAJ_2022</a> viser data for elpærer fra BLID.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">3.3</span></td>
+                            <td colspan="2" style="vertical-align: text-top;">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvad var levetiden i gennemsnit for elpærerne fra BLID?
+                                    <br /><br /><br />
+                                    Anna siger, at hun ud fra testresultaterne vil vælge SKIN-pærer, men Peter siger, at han vil vælge BLID-pærer.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">3.4</span></td>
+                            <td colspan="2" style="vertical-align: text-top;">
+                                <div style="padding-top:calc(0.1em + 2px);">Du skal bruge diagrammet øverst og data fra regnearket til at skrive et argument for Annas valg og et argument for Peters valg.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 4-->
+                <div class="PAGE" data-id="8" data-parentid="0" data-layout="0" data-menutekst="Opgave 4">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">4</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Højdemåling</h2>
+                                <span style="line-height: 28px;">Opgave 4 giver højst 9 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                Anna og Peter vil finde ud af, hvor højt byens kirketårn er. En dag, hvor solen skinner, måler de derfor længden af kirketårnets skygge og længden af Annas skygge. På tegningen kan man se deres målinger ved de to retvinklede trekanter.
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                <div class="svg" style="width:100%;">
+                                    <canvas width="116" height="100"></canvas>
+                                    <svg id="ea95854f-818f-4fe9-8b1b-57a773ab0b20" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1497.81 1287.84">
+                                        <image width="1498" height="1288" xlink:href="files/194499_billede_opg4.png"/>
+                                        <text transform="translate(442.04 459.17)" style="font-size: 37px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">h</text>
+                                        <text transform="translate(610.78 907.15)" style="font-size: 36px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">17,5 m</text>
+                                        <text transform="translate(1267.07 933.36) scale(0.97 1)" style="font-size: 36px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Anna</text>
+                                        <text transform="translate(1081.2 981.58)" style="font-size: 36px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">1,69 m</text>
+                                        <text transform="translate(1171.25 1086.65)" style="font-size: 36px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">2,5 m</text>
+                                        <text transform="translate(1030.27 1061.13)" style="font-size: 36px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">v</text>
+                                        <text transform="translate(1015 1183.47) scale(0.88 1)" style="font-size: 36px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Peter</text>
+                                        <text transform="translate(34.74 1255.1) scale(0.92 1)" style="font-size: 38px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Skitse</text>
+                                    </svg>
+                                </div>
+                                <div style="font-size: 80%; text-align: right;">Tegning: Hans Ole Herbst</div>
+                                Anna er 1,69 m høj.
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">4.1</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">Du skal vise med beregning, at Annas skygge er ca. 1,5 gange så lang som Anna.¨
+                                    <br /><br /><br />
+                                    De to vinkler, der er markeret med sort, er lige store.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">4.2</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">Forklar, hvorfor de to blå trekanter på tegningen er ligedannede.
+                                    <br /><br /><br />
+                                    Anna har beregnet, at kirketårnet er ca. 11,8 m højt.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">4.3</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">Du skal vise, hvordan Anna kan have beregnet kirketårnets højde.
+                                    <br /><br /><br />
+                                    Peter har målt vinkel <i>v</i> til 34&deg; og afstanden til kirketårnet til 17,5 m. Han vil bruge målingerne til at regne ud, om det kan passe, at højden af kirketårnet er ca. 11,8 m.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">4.4</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvordan kan Peter bruge enten sinus, cosinus eller tangens til at beregne højden af kirketårnet?
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 5-->
+                <div class="PAGE" data-id="9" data-parentid="0" data-layout="0" data-menutekst="Opgave 5">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">5</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Stearinlys</h2>
+                                <span style="line-height: 28px;">Opgave 5 giver højst 11 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div style="position:relative">
+                        <div style="display:inline-block;width:100%;">
+                            <div style="width:82%; display:inline-block;">
+                                <table style="width:100%;">
+                                    <tr>
+                                        <td style="vertical-align: top;width:42px;"></td>
+                                        <td style="vertical-align: text-top;">
+                                            <br /><br /><br /><br />
+                                            Anna har tændt et stearinlys og målt længden af det hvert 20. minut.
+                                            <br />
+                                            Tabellen viser Annas resultater.
+                                            <br /><br /><br />
+                                            <table style="width: 100%; border: 1px solid black; border-collapse: collapse; text-align: center;" cellPadding="10">
+                                                <tr style="background-color: #82d0f5;">
+                                                    <td style="width: 45%; border-right: 1px solid black; border-bottom: 1px solid black; text-align: left;">
+                                                        Tid i minutter
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        0
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        20
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        40
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        60
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        80
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 45%; border-right: 1px solid black; border-bottom: 1px solid black; text-align: left;">
+                                                        Stearinlysets længde i centimeter
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        22
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        21
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        20
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        19
+                                                    </td>
+                                                    <td style="width: 11%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                        18
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br /><br />
+                                        </td>
+                                        <td style="width: 6%;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: top; width: 42px;"><span class="box blue">5.1</span></td>
+                                        <td style="vertical-align: text-top;">
+                                            <div style="padding-top:calc(0.1em + 2px);">Hvor langt vil stearinlyset være efter 120 minutter?
+                                                <br /><br /><br />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: top; width: 42px;"><span class="box blue">5.2</span></td>
+                                        <td style="vertical-align: text-top;">
+                                            <div style="padding-top:calc(0.1em + 2px);">Tegn en graf, som viser sammenhængen mellem tiden og stearinlysets længde i al den tid, lyset brænder.
+                                                <br /><br /><br />
+                                                Peter har lavet målinger på et andet stearinlys. Funktionsforskriften i den gule boks beskriver en sammenhæng, Peter har fundet i disse målinger.
+                                                <br /><br />
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div style="width:18%;float:right;">
+                                <img src="files/194499_billede_opg5.png" alt="" width="100%">                                     
+                            </div>
+                        </div>
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;">&nbsp;</td>
+                                <td style="vertical-align: text-top;">
+                                    <div style="padding-top:calc(0.1em + 2px);">
+                                        <table style="margin-left: 20%; padding:9px; background: #ffed00; width:50%; border: 1px solid black; border-collapse: collapse;" cellPadding="20">
+                                            <tr>
+                                                <td>
+                                                    <i>f</i>&nbsp;(<i>x</i>)&nbsp;=&nbsp;25&nbsp;-&nbsp;2,4<i>x</i>
+                                                    <br /><br />
+                                                    <i>x</i> er antal timer, lyset har brændt.
+                                                    <br /><br />
+                                                    <i>f</i>&nbsp;(<i>x</i>) er lysets længde i centimeter.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">5.3</span></td>
+                                <td>
+                                    <div style="padding-top:calc(0.1em + 2px);">Forklar, hvad tallene 25 og 2,4 fortæller om Peters stearinlys.
+                                        <br /><br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">5.4</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor mange timer kan Peters stearinlys cirka brænde, før det er brændt helt ned?
+                                        <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width:18%;position:absolute;top:0;right:0;">
+                            <img src="files/194499_billede_opg5.png" alt="" width="100%">    
+                            <br />
+                            <span style="font-size: 80%;">Foto: Opgavekommissionen i matematik</span>   
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 6-->
+                <div class="PAGE" data-id="10" data-parentid="0" data-layout="0" data-menutekst="Opgave 6">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">6</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Vinkler ved en cirkel</h2>
+                                <span style="line-height: 28px;">Opgave 6 giver højst 11 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                <br /><br />
+                                Anna har tegnet en cirkel med en diameter og to linjestykker:
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                <table style="width:100%; border: 1px solid black; border-collapse: collapse; text-align: left;" cellPadding="10">
+                                    <tr>
+                                        <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                            <div class="svg" style="width:98%;">
+                                                <canvas width="100" height="100"></canvas>
+                                                <svg id="ad027840-1755-43fd-8828-3de3cf4ef9d7" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.94 500.94">
+                                                    <image width="501" height="501" xlink:href="files/194499_billede_opg6_1.png"/>
+                                                    <text transform="translate(198.3 286.79) scale(1.07 1)" style="font-size: 49px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">C</text>
+                                                </svg>
+                                            </div>
+                                        </td>
+                                        <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black;"><div class="svg">
+                                            <div class="svg" style="width:98%;">
+                                                <canvas width="100" height="100"></canvas>
+                                                <svg id="ee457dc6-dac2-406d-b200-8eb5d7c5c772" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.94 500.94">
+                                                    <image width="501" height="501" xlink:href="files/194499_billede_opg6_2.png"/>
+                                                    <text transform="translate(199.04 286.86) scale(1.05 1)" style="font-size: 49px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">C</text>
+                                                    <text transform="translate(422.95 56.62) scale(1.17 1)" style="font-size: 45px;font-family: ArialMT, Arial;letter-spacing: -0.018074054644058573em;fill:rgba(0,0,0,0);">P</text>
+                                                </svg>
+                                            </div>
+                                        </td>
+                                        <td style="width: 33%; border-bottom: 1px solid black;">
+                                            <div class="svg" style="width:98%;">
+                                                <canvas width="100" height="100"></canvas>
+                                                <svg id="b242e763-2afb-4c84-907f-0f23f29b73f6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.94 520.93">
+                                                    <image width="501" height="521" xlink:href="files/194499_billede_opg6_3.png"/>
+                                                    <text transform="translate(199.49 286.97)" style="font-size: 48px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">C</text>
+                                                    <text transform="translate(427.31 59.02) scale(1.11 1)" style="font-size: 48px;font-family: ArialMT, Arial;letter-spacing: -0.018067794007472212em;fill:rgba(0,0,0,0);">P</text>
+                                                    <text transform="translate(374.93 506.11) scale(1.1 1)" style="font-size: 44.404029846191406px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Q</text>
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-right: 1px solid black; vertical-align: text-top;">Anna har først tegnet en cirkel og en diameter i cirklen.</td>
+                                        <td style="border-right: 1px solid black; vertical-align: text-top;">Så har hun tegnet et punkt, <i>P</i>, på cirkelperiferien og et linjestykke mellem <i>P</i> og cirklens centrum, <i>C</i>.</td>
+                                        <td style="vertical-align: text-top;">Til sidst har hun tegnet et linjestykke fra <i>P</i> til det ene af diameterens endepunkter, <i>Q</i>.</td>
+                                    </tr>
+                                </table>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding-top:4%; width: 42px;"><span class="box blue">6.1</span></td>
+                            <td style="vertical-align: text-top; padding-top:4%;">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Tegn en cirkel med en diameter og to linjestykker på samme måde som Anna, men hvor <i>P</i> er placeret et andet sted på cirkelperiferien.
+                                    <br /><br /><br />
+                                    På tegningen herunder har Anna givet vinklerne ved linjestykkerne navne.
+                                    <br /><br />
+                                    <div class="svg" style="width:33%; margin-left: 33%;">
+                                        <canvas width="98" height="100"></canvas>
+                                        <svg id="ff4057f2-ad9e-4127-aa23-d2e7629ff8be" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 539.93 550.93">
+                                            <image width="540" height="551" xlink:href="files/194499_billede_opg6_4.png"/>
+                                            <text transform="translate(218.3 304.73) scale(1.07 1)" style="font-size: 43px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">C</text>
+                                            <text transform="translate(263.12 210.26) scale(1.14 1)" style="font-size: 40px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">u</text>
+                                            <text transform="translate(310.3 291.43) scale(1.55 1)" style="font-size: 40px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">t</text>
+                                            <text transform="translate(449.83 71.32) scale(1.2 1)" style="font-size: 42px;font-family: ArialMT, Arial;letter-spacing: -0.018058547399055765em;fill:rgba(0,0,0,0);">P</text>
+                                            <text transform="translate(401.42 154.32)" style="font-size: 42px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">w</text>
+                                            <text transform="translate(364.12 446.96)" style="font-size: 42px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">v</text>
+                                            <text transform="translate(395.88 535.31) scale(0.98 1)" style="font-size: 46.85691833496094px;font-family: ArialMT, Arial;fill:rgba(0,0,0,0);">Q</text>
+                                        </svg>
+                                    </div>
+                                    <br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">6.2</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Forklar, hvordan Anna kan vide, at vinklerne <i>v</i>, <i>w</i> og <i>t</i> tilsammen er 180&deg;, det vil sige, at <i>v</i>&nbsp;+&nbsp;<i>w</i>&nbsp;+&nbsp;<i>t</i>&nbsp;=&nbsp;180&deg;
+                                    <br /><br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">6.3</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Forklar, hvordan Anna kan vide, at vinkel <i>v</i> og vinkel <i>w</i> er lige store, det vil sige, at <i>v</i>&nbsp;=&nbsp;<i>w</i>.
+                                </div>
+                                <br /><br />
+                                Anna vil bevise, at vinkel <i>u</i> altid er dobbelt så stor som vinkel <i>v</i>, det vil sige, at <i>u</i>&nbsp;=&nbsp;2<i>v</i>.
+                                <br />
+                                Hun skriver de tre linjer herunder.
+                                <br />
+                                <table cellPadding="6" style="margin-left: -1%;">
+                                    <tr>
+                                        <td style="width: 15%;">Linje 1)</td>
+                                        <td><i>v</i>&nbsp;+&nbsp;<i>v</i>&nbsp;+&nbsp;<i>t</i>&nbsp;=&nbsp;180&deg;, fordi jeg kan indsætte <i>v</i> i stedet for <i>w</i> i udtrykket <i>v</i>&nbsp;+&nbsp;<i>w</i>&nbsp;+&nbsp;<i>t</i>&nbsp;=&nbsp;180&deg;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Linje 2)</td>
+                                        <td><i>t</i>&nbsp;+&nbsp;<i>u</i>&nbsp;=&nbsp;180&deg;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Linje 3)</td>
+                                        <td><i>u</i>&nbsp;=&nbsp;2<i>v</i></td>
+                                    </tr>
+                                </table>
+                                <br />
+                                Anna har skrevet en forklaring på, hvorfor udtrykket i linje 1) er korrekt.
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">6.4</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Forklar, hvorfor udtrykkene i linje 2) og 3) er korrekte.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 7-->
+                <div class="PAGE" data-id="11" data-parentid="0" data-layout="0" data-menutekst="Opgave 7">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">7</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Regneudtryk med fire 1-taller</h2>
+                                <span style="line-height: 28px;">Opgave 7 giver højst 6 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                I denne opgave skal du indsætte regnetegn og eventuelt parenteser, så regneudtrykkene bliver korrekte.
+                                <br /><br />
+                                <div style="text-align: center;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;3
+                                </div>
+                                <br />
+                                <ul style="line-height: 1.6em; padding: 0; margin-left: 3%;">
+                                    <li>Du skal skrive ét regnetegn i hver firkant.</li>
+                                    <li>Du må bruge regnetegnene plus, minus, gange og division. Du må gerne bruge samme regnetegn flere gange.</li>
+                                    <li>Du må sætte parenteser, hvor du vil. Du må ikke sætte andre tegn uden for firkanterne.</li>
+                                </ul>
+                                <br /><br />
+                                I regneudtrykket ovenfor kan man for eksempel indsætte regnetegn og parenteser sådan her:
+                                <br /><br />
+                                <div style="text-align: center;">
+                                    <span style="color: #005ba9; font-weight:700;">(</span>1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;<span style="color: #005ba9; font-weight:700;">+</span>&nbsp;</span>&nbsp;1<span style="color: #005ba9; font-weight:700;">)</span>&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left; padding-left: 0.15em; padding-right: 0.15em;">&nbsp;<span style="color: #005ba9; font-weight:700;">&middot;</span>&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;<span style="color: #005ba9; font-weight:700;">+</span>&nbsp;</span>&nbsp;1&nbsp;=&nbsp;3
+                                </div>
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">7.1</span></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">Du skal indsætte ét regnetegn i hver firkant og eventuelt parenteser, så de 6 regneudtryk herunder bliver korrekte. Brug eventuelt svararket.
+                                </div>
+                                <br />
+                                <div style="text-align: left;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;2
+                                </div>
+                                <br />
+                                <div style="text-align: left;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;1
+                                </div>
+                                <br />
+                                <div style="text-align: left;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;0
+                                </div>
+                                <br />
+                                <div style="text-align: left;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;-1
+                                </div>
+                                <br />
+                                <div style="text-align: left; line-height: 1.4em; margin-bottom: 0.4em; margin-top: -0.35em;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;<span class="frac"><div>1</div><div>2</div></span>
+                                </div>
+                                <div style="text-align: left; line-height: 1.4em; margin-top: -0.1em;">
+                                    1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;<span style="border: 1px solid black; border-collapse: collapse; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;1&nbsp;=&nbsp;-&nbsp;<span class="frac"><div>1</div><div>2</div></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="12" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+
+                <!--Bilag til opgave 2-->
+                <div class="PAGE" data-id="13" data-parentid="0" data-layout="0" data-menutekst="Bilag til opgave 3">
+                    <h1>Bilag til opgave 3</h1>
+                    <br />
+                    <a href="files/194499_blid_maj_2022.xlsx" target="_blank">Excelfil til opgave 3</a>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Bilag til opgave 7-->
+                <div class="PAGE" data-id="14" data-parentid="0" data-layout="2" data-menutekst="Svarark til opgave 2 og 7">
+					<a class="pdfLink" id="pdfLink14" href="files/194499_svarark.pdf" target="_blank">LYD</a>
+				</div>
+
+
+            </div> <!-- END CONTENT -->
+        </div> <!-- END MAIN -->
+        <div id="bottomMenu"></div>
+    </div>
+</body>
+
+</html>
